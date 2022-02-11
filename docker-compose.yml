@@ -2,7 +2,7 @@ version: '3'
 services:
   docsify:
     build: ./docker/docsify
-    container_name: docsify
+    container_name: docsify_m141
     ports:
       - "10000:10000"
       - "35729:35729"
@@ -13,7 +13,7 @@ services:
 
   plantuml:
     image: "plantuml/plantuml-server:jetty"
-    container_name: plantuml
+    container_name: plantuml_m141
     ports:
         - "10001:8080"
 
