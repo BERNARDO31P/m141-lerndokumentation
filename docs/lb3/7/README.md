@@ -126,6 +126,7 @@ Danach kann man mit diversen Befehlen die Struktur anzeigen:
 ```sql
 SHOW TABLES; // Zeigt die Tabellen in der DB
 SHOW COLUMNS FROM store; // Zeigt die Spalten in der Tabelle
+DESCRIBE store; // Zeigt die Spalten und Informationen in der Tabelle
 ```
 
 Dabei ist mir aufgefallen, dass alles in die store Tabelle gespeichert wird.
