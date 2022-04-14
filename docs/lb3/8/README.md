@@ -32,7 +32,7 @@ Hier eine kurze Erklärung:
 #### Beispiel
 ```sql
 mysql > DELIMITER //
-mysql > CREATE PROCEDURE GetAllProducts ()
+mysql > CREATE PROCEDURE GetAllProducts (OUT products VARCHAR)
 -> BEGIN
 -> SELECT * FROM products ;
 -> END ;
