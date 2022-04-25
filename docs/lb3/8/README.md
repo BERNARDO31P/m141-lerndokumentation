@@ -131,3 +131,15 @@ Das Anzeigen von triggers geht folgendermassen:
 ```sql
 SHOW TRIGGERS IN datenbank_name
 ```
+
+```sql
+DELIMITER //
+CREATE TRIGGER validate_sales_amount
+BEFORE INSERT ON sales
+FOR EACH ROW
+IF NEW.sales_amount>10000 THEN
+SIGNAL SQLSTATE '45000'
+SET MESSAGE_TEXT = 'Sale has exceeded the allowed amount of 10000.';
+END IF//
+DELIMITER ;
+```
