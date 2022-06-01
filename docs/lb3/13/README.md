@@ -188,7 +188,7 @@ sudo mongod --replSet book --dbpath ./mongo3 --port 27013 --keyFile "/etc/mongod
 **Achtung**
 Diese Befehl funktioniert nur, wenn der Benutzer die Root Rolle besitzt!
 
-Jetzt starte ich die Initialisierung in der `mongo` shell:^
+Jetzt starte ich die Initialisierung in der `mongo` shell:
 ```javascript
 rs.initiate()
 rs.status()
